@@ -54,19 +54,19 @@ export default function Welcome({
 
                     <div className="flex flex-col sm:flex-row gap-4">
                         {auth.user ? (
-                            <Button size="lg" className="h-12 px-8 text-lg text-white" asChild>
+                            <Button size="lg" className="h-12 px-8 text-lg text-gray-600 dark:text-white" asChild>
                                 <Link href={route('dashboard')}>
                                     Go to Dashboard <ArrowRight className="ml-2 h-5 w-5" />
                                 </Link>
                             </Button>
                         ) : (
                             <>
-                                <Button size="lg" className="h-12 px-8 text-lg text-white" asChild>
+                                <Button size="lg" className="h-12 px-8 text-lg text-gray-600 dark:text-white" asChild>
                                     <Link href={route('login')}>
                                         Get Started <ArrowRight className="ml-2 h-5 w-5" />
                                     </Link>
                                 </Button>
-                                <Button size="lg" variant="outline" className="h-12 px-8 text-lg text-white" asChild>
+                                <Button size="lg" variant="outline" className="h-12 px-8 text-lg text-gray-600 dark:text-white" asChild>
                                     <Link href={route('register')}>
                                         Create Account
                                     </Link>
