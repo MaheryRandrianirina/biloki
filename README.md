@@ -25,7 +25,7 @@ Suivez les étapes ci-dessous pour configurer le projet dans votre environnement
 
 1. **Cloner le projet**
    ```bash
-   git clone <url-du-depot>
+   git clone git@github.com:MaheryRandrianirina/biloki.git
    cd biloki
    ```
 
@@ -38,7 +38,10 @@ Suivez les étapes ci-dessous pour configurer le projet dans votre environnement
    ```bash
    npm install
    ```
-
+   Si vous rencontrez des problèmes avec les dépendances, vous pouvez essayer :
+   ```bash
+   npm install --legacy-peer-deps
+   ```
 4. **Configurer l'environnement**
    Copiez le fichier d'exemple pour créer votre propre fichier `.env` :
    ```bash
@@ -60,6 +63,15 @@ Suivez les étapes ci-dessous pour configurer le projet dans votre environnement
    ```bash
    php artisan migrate --seed
    ```
+   Si vous utilisez MySQL ou PostgreSQL, configurez les variables d'environnement dans le fichier `.env` correspondantes :
+      ```
+      DB_CONNECTION=mysql
+      DB_HOST=127.0.0.1
+      DB_PORT=3306
+      DB_DATABASE=biloki
+      DB_USERNAME=root
+      DB_PASSWORD=
+      ```
 
 ## 💻 Lancement de l'application
 
@@ -76,9 +88,13 @@ Pour faire fonctionner l'application, vous devez lancer le serveur backend et le
    npm run dev
    ```
 
+3. Compte par defaut
+   - Email : admin@example.com
+   - Password : password
+
 ## 🏗️ Architecture
 
-- **Backend** : Laravel 11
+- **Backend** : Laravel 13
 - **Frontend** : React (TypeScript) via Inertia.js
 - **Stylisation** : Tailwind CSS
 - **Outil de build** : Vite
