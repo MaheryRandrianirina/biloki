@@ -82,7 +82,3 @@ Pour faire fonctionner l'application, vous devez lancer le serveur backend et le
 - **Frontend** : React (TypeScript) via Inertia.js
 - **Stylisation** : Tailwind CSS
 - **Outil de build** : Vite
-
-## 📄 Licence
-
-Ce projet est sous licence MIT.
